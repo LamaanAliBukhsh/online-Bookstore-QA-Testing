@@ -1,0 +1,16 @@
+Test Case ID,Module / Suite,Section,Test Scenario,Test Steps,Expected Result,Priority,Test Type,Mapped Requirement,Execution Status
+TC_AUTH_01,Authentication & Users,Login Flows,Verify user can log in with valid credentials,"1. Navigate to homepage
+2. Click Sign In
+3. Enter valid email & password
+4. Click Login",User is authenticated and redirected to homepage with profile name displayed.,High,Smoke,FR-01,Passed
+TC_AUTH_02,Authentication & Users,Login Flows,Verify system blocks login with incorrect password,"1. Navigate to login page
+2. Enter valid email
+3. Enter wrong password
+4. Click Login",System denies access and displays error: 'Invalid email or password'.,High,Negative,FR-01,Blocked
+TC_CAT_01,Catalog & Search,Search & Filters,Verify multi-filter by Author and Genre,"1. Open catalog page
+2. Select 'Stephen King' under Author
+3. Select 'Horror' under Genre
+4. Click Apply Filters",Catalog filters to display only Stephen King Horror books with active filter tags visible.,Medium,Regression,FR-02,Passed
+TC_CART_01,Cart & Checkout,Cart Management,Verify adding a book to the shopping cart,"1. Navigate to book details page
+2. Click 'Add to Cart'
+3. Open shopping cart",Toast notification confirms item added; cart counter increments; book appears in cart.,High,Smoke,FR-03,Passed
